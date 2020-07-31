@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" >
+
+<head>
+  
+  
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>cyber~Congress</title>
+<meta name="description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="author" content="cyber~Congress" />
+
+<link rel="canonical" href="../../../docs/go-cyber/upgrade_guide/" />
+<link rel="alternate" href="../../../docs/go-cyber/upgrade_guide/" hreflang="x-default">
+
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta property="og:title" content="cyber~Congress" />
+<meta property="og:site_name" content="cyber~Congress" />
+<meta property="og:url" content="/docs/go-cyber/upgrade_guide/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="//img/ipfs-logo-256-ice.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" contentlogo="146" />
+<meta property="og:image:height" content="166" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="cyber~Congress" />
+<meta name="twitter:title" content="cyber~Congress" />
+<meta name="twitter:creator" content="cyber~Congress" />
+<meta name="twitter:description" content="A peer-to-peer hypermedia protocol to make the web faster, safer, and more open." />
+<meta name="twitter:domain" content="https://cybercongress.ai" />
+<meta name="twitter:image:src" content="//img/ipfs-logo-256-ice.png" />
+
+<link rel="stylesheet" href="../../../css/main.css" />
+<link rel="stylesheet" href="../../../highlight/github-gist.css" />
+<link rel="stylesheet" href="../../../asciinema/asciinema-player.css" />
+
+<link rel="shortcut icon" href="../../../img/newlogo.png">
+<link rel="alternate feed" href="../../../index.xml" type="application/rss+xml" title="IPFS Blog" />
+
+<script src="../../../asciinema/asciinema-player.js"></script>
+<script src="../../../highlight/highlight.js"></script>
+
+<script src="../../../js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+
+
+<script type="text/javascript" src="../../../js/lunr.min.js"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js"></script>
+<script type="text/javascript" src="../../../js/learn.js"></script>
+<script type="text/javascript" src="../../../js/search.js"></script>
+
+<script src="../../../js/clipboard.min.js"></script>
+
+<script src="../../../js/featherlight.min.js"></script>
+
+
+
+<script src="../../../theme-flex/script.js"></script>
+
+<script>hljs.initHighlightingOnLoad()</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+
+<body id='docs'>
+    <header class="header-has-logo"  id="stars" >
+    <div class="container cf">
+        <h1 class="pull-left logo margin-bottom">
+            <a href="../../../" class="logo ipfs-logo transition transition-fadeout">cyber~Congress</a>
+            <a href="../../../"><span class='logo-text'>cyber~Congress</span></a>
+        </h1>
+        <nav role="navigation" class="pull-right top-nav top-nav-dark cf">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle"></label>
+            <ul class="list-unstyled list-inline cf flex align-center">
+                <div class="searchbox">
+                    <input data-search-input id="search-by" type="text" placeholder="Search...">
+                    <span data-search-clear=""><i class="cansel"></i></span>
+                </div>
+                <li><a href="../../../docs/go-cyber/cyberd/"
+                        >Docs</a></li>
+                <li><a href="http://ai.cybercongress.ai/" >Forum</a></li>
+                <li><a href="../../../post"
+                        >Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="view-more">
+        <label>View more</label><a href="#"></a>
+    </div>
+</header>
+    <header class="docs-header-mob align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Upgrade Guide
+  
+</strong>
+</header>
+
+    
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container docs">
+    
+    <aside class="book-menu fixed">
+      <nav>
+    <h2 class="book-brand logo">
+  <a href="../../../" class="ipfs-logo transition transition-fadeout">cyber•Congress</a>
+  <a href="../../../">cyber~Congress</a>
+</h2>
+
+
+
+
+  
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f docs\2fgo-cyber\2fupgrade_guide\2f "] {
+      color: #36d6ae;
+  }
+  </style>
+
+<ul>
+<li><a href="../../../docs/go-cyber/cyberd/">Whitepaper</a></li>
+<li>Usage:
+
+<ul>
+<li><a href="../../../docs/go-cyber/run_validator/">Run the validator</a></li>
+<li><a href="../../../docs/go-cyber/supported_gpu_list/">Supported GPUs list</a></li>
+<li><a href="../../../docs/go-cyber/ultimate-commands-guide/">CLI guide</a></li>
+<li><a href="../../../docs/go-cyber/get_cyb/">Get EUL</a></li>
+<li><a href="../../../docs/go-cyber/port_forwarding_guide/">Port forwarding</a></li>
+<li><a href="../../../docs/go-cyber/cyberd_ledger_guide/">Cyberd Ledger guide</a></li>
+<li><a href="../../../docs/go-cyber/multisig_guide/">Multisig guide</a></li>
+<li><a href="../../../docs/go-cyber/validator_launch_with_tendermintkms_and_ledger/">Run validator with Tendermint and Ledger</a></li>
+<li><a href="../../../docs/go-cyber/setup_cyberd_configuration/">Set up config.toml in the right way</a></li>
+<li><a href="../../../docs/go-cyber/upgrade_guide/">Upgrade guide</a></li>
+</ul></li>
+<li>Dev environment:
+
+<ul>
+<li><a href="../../../docs/go-cyber/setup_dev_env/">Setup development environment</a></li>
+</ul></li>
+<li>Specs:
+
+<ul>
+<li><a href="../../../docs/go-cyber/rpc/">RPC</a></li>
+<li><a href="../../../docs/go-cyber/keystore/">Keystore</a></li>
+</ul></li>
+<li><a href="../../../docs/go-cyber/changelog/">CHANGELOG</a></li>
+<li><a href="../../../docs/go-cyber/contributing/">CONTRIBUTING</a></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+        <div class='project'>
+            <a href="../../../docs/go-cyber/cyberd/">cyber</a>
+            <a href="../../../docs/cyb/dura/">cyb</a>
+          </div>
+      
+<article class="markdown">
+  <h1></h1>
+
+<h1 id="how-to-upgrade-cyber-node-with-cosmosd">How to upgrade cyber node with cosmosd</h1>
+
+<p>Upgrade to newer version of binaries will be covered in this guide. Go-cyber using <a href="https://github.com/regen-network/cosmosd">cosmosd</a> upgrade manager and <a href="https://docs.cosmos.network/master/modules/upgrade/">upgrade module</a> for on-chain upgrades.</p>
+
+<p>If you set up your node using this <a href="https://github.com/cybercongress/go-cyber/blob/master/docs/run_validator.md">Run validator guide</a> it should be pretty eady to prepare for upgrade.</p>
+
+<h2 id="definition">Definition</h2>
+
+<p>Current upgrade named Darwin, so all further referencies will be made to that name. Overal upgrade process is basically tied to changing binary file of the cyberd to new version, at the same time for all validator nodes. Governance proposal for upgrade will define name for upgrade and block in the chain, when this upgrade should happen. New binary file must be pre-compiled (or downloaded), and placed rigth inside <code>.cyberd</code> folder. Whole uprade process is as simple as theese steps:</p>
+
+<ul>
+<li><p>newly compiled <code>cyberd</code> binary file is being placed into correct directory</p></li>
+
+<li><p>when desired upgrade block comes <code>cosmosd</code> catches event and stops cyber node</p></li>
+
+<li><p><code>cosmosd</code> starting node from new binary file from the directory with upgrade name</p></li>
+</ul>
+
+<h3 id="cosmosd-explained">Cosmosd explained</h3>
+
+<p><a href="https://github.com/regen-network/cosmosd">Cosmosd</a> is a tool designed by <a href="https://github.com/regen-network">Regen-Network</a> devs. It is designed for smooth and configurable management of upgrading binaries as a live chain is upgraded, as well as makes syncing a full node for genesis simplier. The upgrade manager will monitor the stdout of the daemon to look for messages from the upgrade module indicating a pending or required upgrade and act appropriately.</p>
+
+<p>Since the version 0.1.6 (Euler-6) upgrade module has been integrated to cyber, which add possibility to make new kind of proposal called <code>software-upgrade</code>. This proposal, if passed, set specific block or time when upgrade should happen as well as specifies unique upgrade name. By default cosmosd is launching deamon file that is located under <code>DAEMON_HOME/upgrade_manager/genesis/</code> folder. When upgrade time comes <code>cyberd</code> generates to it&rsquo;s stdout sting looks like following:</p>
+
+<pre><code class="language-bash">Jul 16 17:25:11 mars cosmosd[5791]: E[2020-07-16|17:25:11.325] UPGRADE &quot;darwin&quot; NEEDED at height: 2000:     module=main
+</code></pre>
+
+<p>Cosomosd catching that string at deamon stdout, stops cyberd and changes symbolic link current from</p>
+
+<pre><code class="language-bash">current -&gt; /root/.cyberd_testnet/upgrade_manager/genesis
+</code></pre>
+
+<p>to new one according with upgrade name</p>
+
+<pre><code class="language-bash">current -&gt; /root/.cyberd_testnet/upgrade_manager/upgrades/darwin
+</code></pre>
+
+<p>After link changed to new binary <code>cosmosd</code> will attempt to restart node using new daemon binary file.</p>
+
+<h2 id="preparation">Preparation</h2>
+
+<p>There is a few checkpoints each validator must comlpy with to make upgrade succesfull:</p>
+
+<ol>
+<li><p>Correct version of cosmosd</p></li>
+
+<li><p>Correctly set <code>cyberd.service</code> file</p></li>
+
+<li><p>New <code>cyberd</code> binary file is compiled and placed correctly</p></li>
+</ol>
+
+<p>Let&rsquo;s dig into each point separately.</p>
+
+<h3 id="cosmosd-version-check">Cosmosd version check</h3>
+
+<p>Cosmosd must be compiled from the latest commit of <a href="https://github.com/regen-network/cosmosd">cosmosd-repo</a>. Correct commit is <code>984175ff7c0a3815dcf2e99329cb3fbf7d7bb0b9</code>, so if you have cosmosd repo cloned on your node just do:</p>
+
+<pre><code class="language-bash">cd /path_to_cosmosd/cosmosd
+git log
+</code></pre>
+
+<p>and make sure current commit is same or newer than <code>984175ff7c0a3815dcf2e99329cb3fbf7d7bb0b9</code>. Released version 0.2.0 has a bug, which will fail upgrade. So if your cosmosd folder loks like this</p>
+
+<pre><code class="language-bash">cosmosd-0.2.0
+</code></pre>
+
+<p>you are on the wrong version, and will have to correct this.</p>
+
+<p>In case when you removed cosmosd directory, it&rsquo;s advised to clone repo again and rebuild cosmosd to make sure you on 100% correct version.</p>
+
+<p>To get correct version do the following:</p>
+
+<pre><code class="language-bash">git clone https://github.com/regen-network/cosmosd.git
+cd cosmosd/
+go build
+service cyberd stop
+mv cosmosd $DAEMON_HOME/
+chmod +x $DAEMON_HOME/cosmosd
+service cyberd start
+</code></pre>
+
+<p>Attention - please, build cosmosd from latest master and double-check your version</p>
+
+<h3 id="cyberd-service-check">Cyberd.service check</h3>
+
+<p>Cyberd.service responsibe for cyberd operation must be 100% similar to current <a href="https://github.com/cybercongress/go-cyber/blob/master/docs/run_validator.md">doc</a>.</p>
+
+<p>To check it open</p>
+
+<pre><code class="language-bash">sudo nano /etc/systemd/system/cyberd.service
+</code></pre>
+
+<p>and verify that it identical to followng (of cource, except usernames and path to folders):</p>
+
+<pre><code class="language-json">[Unit]
+Description=Cyber Node
+After=network-online.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.cyberd/
+ExecStart=/home/ubuntu/.cyberd/cosmosd start --compute-rank-on-gpu=true
+Environment=DAEMON_HOME=/home/ubuntu/.cyberd
+Environment=DAEMON_NAME=cyberd
+Environment=GAIA_HOME=/home/ubuntu/.cyberd
+Environment=DAEMON_RESTART_AFTER_UPGRADE=on
+Restart=always
+RestartSec=3m
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<p>The most important part is</p>
+
+<pre><code class="language-bash">Environment=DAEMON_RESTART_AFTER_UPGRADE=on
+</code></pre>
+
+<p>Because it was missing in out earlier versions of run validator guide, and higly important for node start after upgrade.</p>
+
+<p>If service file was modified, systemd must be reloaded to apply changes:</p>
+
+<pre><code class="language-bash">systemctl daemon-reload
+</code></pre>
+
+<h3 id="prepraing-new-cyberd-binary">Prepraing new cyberd binary</h3>
+
+<p>Upgrade will be released with tag v0.1.6.3, so technically all that required to get it is pull changes inside cloned go-cyber repo:</p>
+
+<pre><code class="language-bash">cd /&lt;path_to_go-cyber&gt;/go-cyber/
+git reset --hard
+git checkout master
+git pull
+</code></pre>
+
+<p>and then build all in the same way as during setup, cuda code first, <code>cyberd</code> binary next:</p>
+
+<pre><code class="language-bash">cd /&lt;path_to_go-cyber&gt;/go-cyber/x/rank/cuda/
+make
+cd /&lt;path_to_go-cyber&gt;/go-cyber/
+make build
+</code></pre>
+
+<p>After all above done, new <code>cyberd</code> and <code>cyberdcli</code> binaries must appear inside ~/go-cyber/build/.</p>
+
+<p>Next we need to create folders tree with upgrade name and place binaries to appropriate location (all of the following execute form <code>go-cyber</code> directory):</p>
+
+<pre><code class="language-bash">mkdir $DAEMON_HOME/upgrade_manager/upgrades/
+mkdir $DAEMON_HOME/upgrade_manager/upgrades/darwin/
+mkdir $DAEMON_HOME/upgrade_manager/upgrades/darwin/bin/
+cp build/cyberd $DAEMON_HOME/upgrade_manager/upgrades/darwin/bin/
+cp build/cyberdcli /usr/local/bin/
+cp build/cyberd /usr/local/bin/
+chmod +x $DAEMON_HOME/upgrade_manager/upgrades/darwin/bin/cyberd
+</code></pre>
+
+<p>To check that everything builded correclty run:</p>
+
+<pre><code class="language-bash">$DAEMON_HOME/upgrade_manager/upgrades/darwin/bin/cyberd version
+</code></pre>
+
+<p>Version must be <code>v0.1.6.3</code>.</p>
+
+<p>And verify upgrade_manager folder from .cyberd directory looks like following, run</p>
+
+<pre><code class="language-bash">tree
+</code></pre>
+
+<p><strong>it migth require installing tree</strong></p>
+
+<p>then check that your upgrade_manager directory looks similar:</p>
+
+<pre><code class="language-bash">.
+├── current -&gt; /root/.cyberd/upgrade_manager/genesis
+├── genesis
+│   └── bin
+│       └── cyberd
+└── upgrades
+    └── darwin
+        └── bin
+            └── cyberd
+</code></pre>
+
+<p>And here thats it for preparation side. It everythng set correctly upgrade will happen automatically.</p>
+
+<p>After upgrade current link will be automatically changed to <code>current -&gt; /root/.cyberd/upgrade_manager/upgrades/darwin</code></p>
+
+<h2 id="upgrade-itself">Upgrade itself</h2>
+
+<p>When upgrade proposal will be submited and upgrade block will come, cosmosd will do following on all nodes across the chain automatically:</p>
+
+<ul>
+<li><p>Stop cyber node</p></li>
+
+<li><p>Change <code>current</code> link to<code>-&gt; .cyberd/upgrade_manager/upgrades/darwin</code></p></li>
+
+<li><p>Start node</p></li>
+</ul>
+
+<p>As soon as there will be more than ~66.66% of voting power at succesfully upgraded validators, chain will continue block production.</p>
+
+<p><strong>Important</strong></p>
+
+<p>This manual would not cover docker setup, for that case you&rsquo;ll have to manually build new conatiner and start it over the node state, instead of old one, manually at/or after the time of the upgrade.</p>
+
+<h2 id="manual-upgrade">Manual upgrade</h2>
+
+<p>If something goes wrong and cosmosd didn&rsquo;t start with new binary at upgrade block you need do following:</p>
+
+<ol>
+<li><p>Stop cyber node:</p>
+
+<pre><code class="language-bash"> service cyberd stop
+</code></pre></li>
+
+<li><p>Go to .cyberd directory and remove current link:</p>
+
+<pre><code class="language-bash">cd /$DAEMON_HOME/upgrade_manager/
+rm current
+</code></pre></li>
+
+<li><p>Create new symbolic link to directory with upgraded binary</p>
+
+<pre><code class="language-bash">ln -s /$DAEMON_HOME/upgrade_manager/upgrades/darwin/ /$DAEMON_HOME/upgrade_manager/current
+</code></pre>
+
+<p>that will point cosmosd to correct binary location.</p></li>
+
+<li><p>Start cyberd service</p>
+
+<pre><code class="language-bash">service cyberd start
+</code></pre></li>
+</ol>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#how-to-upgrade-cyber-node-with-cosmosd">How to upgrade cyber node with cosmosd</a>
+<ul>
+<li><a href="#definition">Definition</a>
+<ul>
+<li><a href="#cosmosd-explained">Cosmosd explained</a></li>
+</ul></li>
+<li><a href="#preparation">Preparation</a>
+<ul>
+<li><a href="#cosmosd-version-check">Cosmosd version check</a></li>
+<li><a href="#cyberd-service-check">Cyberd.service check</a></li>
+<li><a href="#prepraing-new-cyberd-binary">Prepraing new cyberd binary</a></li>
+</ul></li>
+<li><a href="#upgrade-itself">Upgrade itself</a></li>
+<li><a href="#manual-upgrade">Manual upgrade</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  <footer role="contentinfo" class="footer-primary">
+  <div class="container cf">
+    <div class="cf">
+      
+      <div class="share-links center">
+        <ul class="share list-unstyled">
+          
+          <li><a class="Cyber-page" target="_blank" href="https://cyber.page/">Cyber-page</a></li>
+          
+          <li><a class="Cyberd" target="_blank" href="https://cyberd.ai/">Cyberd</a></li>
+          
+          <li><a class="Cyb" target="_blank" href="https://cyb.ai/">Cyb</a></li>
+          
+          <li><a class="Aragon" target="_blank" href="https://mainnet.aragon.org/#/cybercongress/0x4feb2bcc5907e7779130c093eef8fb44502c1330">Aragon</a></li>
+          
+          <li><a class="Github" target="_blank" href="https://github.com/cybercongress">Github</a></li>
+          
+          <li><a class="Forum" target="_blank" href="https://ai.cybercongress.ai/">Forum</a></li>
+          
+          <li><a class="Twitter" target="_blank" href="https://twitter.com/cyber_devs">Twitter</a></li>
+          
+          <li><a class="Rss" target="_blank" href="https://cybercongress.ai/index.xml">Rss</a></li>
+          
+          <li><a class="Telegram" target="_blank" href="https://t.me/fuckgoogle">Telegram</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copyright center">© Cyber License. Don’t believe, don’t fear, don’t ask.</p>
+  </div>
+</footer>
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
